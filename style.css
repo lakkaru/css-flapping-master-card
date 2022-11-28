@@ -93,7 +93,39 @@ h5.number {
   letter-spacing: 1px;
 }
 h5.name {
-  margin-top: 20px;
+  margin-top: 5px;
+}
+footer{
+  display: block;
+  align-content: center;
+  
+}
+.master-logo{
+  display: flex;
+  align-items: flex-end;
+}
+.master-logo::before {
+  content: "";
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  transform:translate(0px, 12px);
+}
+.master-logo::after {
+  content: "";
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(219, 198, 2);
+  border-radius: 50%;
+  transform:translate(35px, 12px);
+  opacity: 70%;
+}
+.mc{
+  z-index: 10;
+  font-size: .6em;
 }
 .card.back-face {
   border: none;
