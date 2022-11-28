@@ -19,14 +19,13 @@ section {
   perspective: 1000px;
 }
 section::before {
-      content: "";
-  position:absolute;
+  content: "";
+  position: absolute;
   height: 240px;
   width: 240px;
   border-radius: 50%;
   transform: translate(-150px, -100px);
   background: linear-gradient(90deg, #9c27b0, #f3f5f5);
-  
 }
 section::after {
   content: "";
@@ -139,4 +138,30 @@ h5.name {
 .card.back-face h5 {
   font-size: 8px;
   margin-top: 15px;
+}
+.gold-lines {
+  display: inline-block;
+  position: relative;
+  margin: 3px 0;
+}
+/* margin = (width-height)/2 */
+.gold-lines,
+.gold-lines::before,
+.gold-lines::after {
+  width: 100%;
+  height: 2px;
+  /* border-radius: 7px; */
+  background-color: rgb(209, 171, 3);
+}
+.gold-lines::before,
+.gold-lines::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.gold-lines::before {
+  bottom: 130%;
+}
+.gold-lines::after {
+  top: 130%;
 }
