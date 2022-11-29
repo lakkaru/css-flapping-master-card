@@ -96,37 +96,35 @@ h5.name {
   margin-top: 5px;
 }
 footer{
-  display: block;
-  align-content: center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 20px;
   
 }
-.master-logo{
-  display: flex;
-  align-items: flex-end;
-}
-.master-logo::before {
+
+#red-dot {
   content: "";
   position:absolute;
   width: 50px;
   height: 50px;
   background: red;
   border-radius: 50%;
-  transform:translate(0px, 12px);
+  transform:translate(-65px, -35px);
+  z-index: -1;
 }
-.master-logo::after {
+
+#yellow-dot {
   content: "";
   position:absolute;
   width: 50px;
   height: 50px;
   background: rgb(219, 198, 2);
   border-radius: 50%;
-  transform:translate(35px, 12px);
+  transform:translate(-30px, -35px);
   opacity: 70%;
 }
-.mc{
-  z-index: 10;
-  font-size: .6em;
-}
+
 .card.back-face {
   border: none;
   padding: 15px, 25px, 25px, 25px;
